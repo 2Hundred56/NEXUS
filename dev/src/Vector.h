@@ -1,5 +1,6 @@
 /*
  * Vector.h
+ * Defines the Vector class, which represents the mathematical object.
  *
  *  Created on: Mar 16, 2017
  *      Author: sunlightiv
