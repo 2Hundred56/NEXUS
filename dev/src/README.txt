@@ -1,1 +1,1 @@
-This file contains the source for the game.
+This folder contains the source for the game.
