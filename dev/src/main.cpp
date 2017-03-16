@@ -1,5 +1,7 @@
 /*
  * main.cpp
+ * Runs the actual game.
+ * TODO: Keep this file as small as possible.
  *
  *  Created on: Mar 16, 2017
  *      Author: sunlightiv
