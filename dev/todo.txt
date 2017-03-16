@@ -1,0 +1,13 @@
+NEXUS
+version 0.0
+
+Next milestone: Runnable Game
+Todo:
+- Create World-Object-Component hierarchy.
+ - Create Worlds, Objects and Components (Done)
+ - Make slot assignment
+ - Connect the classes to each other
+- Create Physics and Render Components.
+- Add a Canvas
+- Add code to draw images
+- Update main.cpp
