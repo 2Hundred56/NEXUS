@@ -6,8 +6,10 @@
  *  Created on: Mar 16, 2017
  *      Author: sunlightiv
  */
-#include "catch.hpp"
 #define CATCH_CONFIG_MAIN
+#include "catch.hpp"
+#include "utVector.cpp"
+
 
 
 

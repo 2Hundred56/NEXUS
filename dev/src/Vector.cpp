@@ -8,9 +8,12 @@
  */
 
 #include "Vector.h"
-
+namespace phys {
+bool operator==(Vector lhs, Vector rhs) {
+	return lhs.getX()==rhs.getX() and lhs.getY()==rhs.getY() and lhs.getZ()==rhs.getZ();
+}
+}
 using namespace phys;
-
 Vector::Vector(float x, float y, float z) {
 	// TODO Auto-generated constructor stub
 	this->x=x;
@@ -21,20 +24,21 @@ Vector::Vector(float x, float y, float z) {
 Vector::~Vector() {
 	// TODO Auto-generated destructor stub
 }
-
 Vector operator+(Vector lhs, Vector rhs) {
-	return Vector(lhs.x+rhs.x, lhs.y+rhs.y, lhs.z+rhs.z);
+	return Vector(lhs.getX()+rhs.getX(), lhs.getY()+rhs.getY(), lhs.getZ()+rhs.getZ());
 }
 
 Vector operator-(Vector lhs, Vector rhs) {
-	return Vector(lhs.x-rhs.x, lhs.y-rhs.y, lhs.z-rhs.z);
+	return Vector(lhs.getX()-rhs.getX(), lhs.getY()-rhs.getY(), lhs.getZ()-rhs.getZ());
 }
 Vector operator*(Vector lhs, float rhs) {
-	return Vector(lhs.x*rhs, lhs.y*rhs, lhs.z*rhs);
+	return Vector(lhs.getX()*rhs, lhs.getY()*rhs, lhs.getZ()*rhs);
 }
 Vector operator/(Vector lhs, float rhs) {
-	return Vector(lhs.x/rhs, lhs.y/rhs, lhs.z/rhs);
+	return Vector(lhs.getX()/rhs, lhs.getY()/rhs, lhs.getZ()/rhs);
 }
 float operator*(Vector lhs, Vector rhs) {
-	return lhs.x*rhs.x+lhs.y*rhs.y+lhs.z*rhs.z;
+	return lhs.getX()*rhs.getX()+lhs.getY()*rhs.getY()+lhs.getZ()*rhs.getZ();
 }
+
+

@@ -43,7 +43,12 @@ public:
 private:
 	float x, y, z;
 };
-
+bool operator==(phys::Vector, phys::Vector);
 } /* namespace phys */
+phys::Vector operator+(phys::Vector, phys::Vector);
+phys::Vector operator-(phys::Vector, phys::Vector);
+phys::Vector operator*(phys::Vector, float rhs);
+phys::Vector operator/(phys::Vector, float);
+float operator*(phys::Vector, phys::Vector);
 
 #endif /* VECTOR_H_ */
