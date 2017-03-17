@@ -9,7 +9,7 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "utVector.cpp"
-
+#include "utHierarchy.cpp"
 
 
 
