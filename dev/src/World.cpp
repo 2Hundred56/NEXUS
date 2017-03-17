@@ -6,7 +6,8 @@
  */
 
 #include "World.h"
-
+#include "Object.h"
+using namespace objs;
 namespace worlds {
 
 World::World() {
@@ -16,6 +17,10 @@ World::World() {
 
 World::~World() {
 	// TODO Auto-generated destructor stub
+}
+
+void World::add(objs::Object* child) {
+	child->setSlot(slot++);
 }
 
 } /* namespace worlds */
