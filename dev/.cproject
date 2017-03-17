@@ -43,9 +43,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.1983811728" name="utVector.cpp" rcbsApplicability="disable" resourcePath="tests/utVector.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.212416385.1959191957">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.212416385.1959191957" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.212416385"/>
-					</fileInfo>
 					<sourceEntries>
 						<entry excluding="tests|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
@@ -164,13 +161,18 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.282686511.480698372" name="utHierarchy.cpp" rcbsApplicability="disable" resourcePath="tests/utHierarchy.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.981877601">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.981877601" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638"/>
+					</fileInfo>
 					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.282686511.1257288857" name="utVector.cpp" rcbsApplicability="disable" resourcePath="tests/utVector.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.854239850">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.854239850" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638"/>
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.854239850" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638">
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.365170474" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
 					</fileInfo>
 					<sourceEntries>
 						<entry excluding="tests|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry excluding="main.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
-						<entry excluding="utVector.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="tests"/>
+						<entry excluding="utHierarchy.cpp|utVector.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="tests"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -197,6 +199,9 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="EclipseRelease"/>
+		<configuration configurationName="EclipseTests"/>
+		<configuration configurationName="EclipseDebug"/>
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/NEXUS Eclipse"/>
 		</configuration>
