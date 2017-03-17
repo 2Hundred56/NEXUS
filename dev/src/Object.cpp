@@ -7,6 +7,7 @@
 
 #include "Object.h"
 #include "Component.h"
+#include "Physics.h"
 using namespace comps;
 
 namespace objs {
@@ -20,11 +21,11 @@ Object::~Object() {
 	// TODO Auto-generated destructor stub
 }
 
-const Component* Object::getPhysics() const {
+const Physics* Object::getPhysics() const {
 	return physics;
 }
 
-void Object::setPhysics(Component* physics) {
+void Object::setPhysics(Physics* physics) {
 	physics->setParent(this);
 	this->physics = physics;
 }
@@ -36,6 +37,15 @@ const comps::Component* Object::getRender() const {
 void Object::setRender(comps::Component* render) {
 	render->setParent(this);
 	this->render = render;
+}
+
+const comps::Component* Object::getDummy() const {
+	return dummy;
+}
+
+void Object::setDummy(comps::Component* dummy) {
+	dummy->setParent(this);
+	this->dummy = dummy;
 }
 
 } /* namespace objs */
