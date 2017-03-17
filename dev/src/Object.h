@@ -7,7 +7,7 @@
 
 #ifndef OBJECT_H_
 #define OBJECT_H_
-namespace comps {class Component;}
+namespace comps {class Component; class Physics; class Drawable;}
 namespace worlds {class World;}
 namespace objs {
 
@@ -24,10 +24,10 @@ public:
 		this->slot = slot;
 	}
 
-	const comps::Component* getPhysics() const;
-	void setPhysics(comps::Component* physics);
-	const comps::Component* getRender() const;
-	void setRender(comps::Component* render);
+	const comps::Physics* getPhysics() const;
+	void setPhysics(comps::Physics* physics);
+	const comps::Drawable* getRender() const;
+	void setRender(comps::Drawable* render);
 
 	const worlds::World* getParent() const {
 		return parent;
@@ -37,11 +37,15 @@ public:
 		this->parent = parent;
 	}
 
+	const comps::Component* getDummy() const;
+	void setDummy(comps::Component* dummy);
+
 private:
 	int slot;
 	worlds::World* parent;
-	comps::Component* physics;
-	comps::Component* render;
+	comps::Physics* physics;
+	comps::Drawable* render;
+	comps::Component* dummy;
 };
 
 } /* namespace objs */
