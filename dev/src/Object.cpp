@@ -8,6 +8,7 @@
 #include "Object.h"
 #include "Component.h"
 #include "Physics.h"
+#include "Drawable.h"
 using namespace comps;
 
 namespace objs {
@@ -30,11 +31,11 @@ void Object::setPhysics(Physics* physics) {
 	this->physics = physics;
 }
 
-const comps::Component* Object::getRender() const {
+const comps::Drawable* Object::getRender() const {
 	return render;
 }
 
-void Object::setRender(comps::Component* render) {
+void Object::setRender(comps::Drawable* render) {
 	render->setParent(this);
 	this->render = render;
 }
