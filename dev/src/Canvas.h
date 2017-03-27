@@ -14,6 +14,7 @@ class Canvas {
 public:
 	Canvas();
 	virtual ~Canvas();
+	void draw(Image* image);
 };
 
 } /* namespace cnvs */
