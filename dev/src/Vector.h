@@ -14,6 +14,7 @@ namespace phys {
 class Vector {
 public:
 	Vector(float x, float y, float z=0);
+	Vector();
 	virtual ~Vector();
 
 	float getX() const {
@@ -41,7 +42,9 @@ public:
 	}
 
 private:
-	float x, y, z;
+	float x=0;
+	float y=0;
+	float z=0;
 };
 bool operator==(phys::Vector, phys::Vector);
 } /* namespace phys */

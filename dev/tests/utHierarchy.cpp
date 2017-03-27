@@ -8,34 +8,24 @@
 #include "World.h"
 #include "Object.h"
 #include "Component.h"
+#include <vector>
 using namespace worlds;
 using namespace objs;
 using namespace comps;
-TEST_CASE("Slot assignment", "[Hierarchy]") {
+using namespace std;
+TEST_CASE("Slot and parent assignment", "[Hierarchy]") {
 	World world = World();
-	Object object0 = Object();
-	Object object1 = Object();
-	Component comp1 = Component();
-	Component comp2 = Component();
-	world.add(&object0);
-	world.add(&object1);
-	object0.setDummy(&comp1);
-	object1.setDummy(&comp2);
-	REQUIRE(object0.getSlot()==0);
-	REQUIRE(object1.getSlot()==1);
-}
-TEST_CASE("Parent assignment", "[Hierarchy]") {
-	World world = World();
-	Object object0 = Object();
-	Object object1 = Object();
-	Component comp1 = Component();
-	Component comp2 = Component();
-	world.add(&object0);
-	world.add(&object1);
-	object0.setDummy(&comp1);
-	object1.setDummy(&comp2);
-	REQUIRE(object0.getParent()==&world);
-	REQUIRE(object1.getParent()==&world);
-	REQUIRE(comp1.getParent()==&object0);
-	REQUIRE(comp2.getParent()==&object1);
+	vector<Object> objects = vector<Object>();
+	vector<Component> components = vector<Component>();
+	for (int i = 0; i<1000; i++) {
+		objects.push_back(Object());
+		components.push_back(Component());
+	}
+	for (int i = 0; i<1000; i++) {
+		world.add(&objects[i]);
+		objects[i].setDummy(&components[i]);
+		REQUIRE(objects[i].getParent()==&world);
+		REQUIRE(objects[i].getSlot()==i);
+		REQUIRE(components[i].getParent()==&objects[i]);
+	}
 }

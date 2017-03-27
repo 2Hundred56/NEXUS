@@ -9,6 +9,7 @@
 #include "Component.h"
 #include "Physics.h"
 #include "Drawable.h"
+#include "Vector.h"
 using namespace comps;
 
 namespace objs {
@@ -17,7 +18,9 @@ Object::Object() {
 	// TODO Auto-generated constructor stub
 
 }
-
+const phys::Vector Object::getPosition() const {
+	return getPhysics()->getPosition();
+}
 Object::~Object() {
 	// TODO Auto-generated destructor stub
 }
