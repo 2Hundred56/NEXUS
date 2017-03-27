@@ -6,7 +6,7 @@
  */
 
 #include "Component.h"
-
+#include "Object.h"
 namespace comps {
 
 Component::Component() {

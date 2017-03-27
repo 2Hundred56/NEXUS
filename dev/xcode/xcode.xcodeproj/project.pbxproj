@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E7ECF2B1E7C221B006455C4 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7ECF2A1E7C221B006455C4 /* SDL2.framework */; };
+		5E7ECF811E7C232A006455C4 /* BasicPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF6D1E7C232A006455C4 /* BasicPhysics.cpp */; };
+		5E7ECF821E7C232A006455C4 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF6F1E7C232A006455C4 /* Canvas.cpp */; };
+		5E7ECF831E7C232A006455C4 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF711E7C232A006455C4 /* Component.cpp */; };
+		5E7ECF841E7C232A006455C4 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF731E7C232A006455C4 /* Drawable.cpp */; };
+		5E7ECF851E7C232A006455C4 /* Invisible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF751E7C232A006455C4 /* Invisible.cpp */; };
+		5E7ECF861E7C232A006455C4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF771E7C232A006455C4 /* main.cpp */; };
+		5E7ECF871E7C232A006455C4 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF781E7C232A006455C4 /* Object.cpp */; };
+		5E7ECF881E7C232A006455C4 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7A1E7C232A006455C4 /* Physics.cpp */; };
+		5E7ECF891E7C232A006455C4 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7D1E7C232A006455C4 /* Vector.cpp */; };
+		5E7ECF8A1E7C232A006455C4 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7F1E7C232A006455C4 /* World.cpp */; };
+		5E7ECF9D1E7C24A9006455C4 /* BasicPhysics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF6D1E7C232A006455C4 /* BasicPhysics.cpp */; };
+		5E7ECF9E1E7C24A9006455C4 /* BasicPhysics.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF6E1E7C232A006455C4 /* BasicPhysics.h */; };
+		5E7ECF9F1E7C24A9006455C4 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF6F1E7C232A006455C4 /* Canvas.cpp */; };
+		5E7ECFA01E7C24A9006455C4 /* Canvas.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF701E7C232A006455C4 /* Canvas.h */; };
+		5E7ECFA11E7C24A9006455C4 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF711E7C232A006455C4 /* Component.cpp */; };
+		5E7ECFA21E7C24A9006455C4 /* Component.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF721E7C232A006455C4 /* Component.h */; };
+		5E7ECFA31E7C24A9006455C4 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF731E7C232A006455C4 /* Drawable.cpp */; };
+		5E7ECFA41E7C24A9006455C4 /* Drawable.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF741E7C232A006455C4 /* Drawable.h */; };
+		5E7ECFA51E7C24A9006455C4 /* Invisible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF751E7C232A006455C4 /* Invisible.cpp */; };
+		5E7ECFA61E7C24A9006455C4 /* Invisible.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF761E7C232A006455C4 /* Invisible.h */; };
+		5E7ECFA71E7C24A9006455C4 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF781E7C232A006455C4 /* Object.cpp */; };
+		5E7ECFA81E7C24A9006455C4 /* Object.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF791E7C232A006455C4 /* Object.h */; };
+		5E7ECFA91E7C24A9006455C4 /* Physics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7A1E7C232A006455C4 /* Physics.cpp */; };
+		5E7ECFAA1E7C24A9006455C4 /* Physics.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7B1E7C232A006455C4 /* Physics.h */; };
+		5E7ECFAB1E7C24A9006455C4 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7D1E7C232A006455C4 /* Vector.cpp */; };
+		5E7ECFAC1E7C24A9006455C4 /* Vector.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7E1E7C232A006455C4 /* Vector.h */; };
+		5E7ECFAD1E7C24A9006455C4 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF7F1E7C232A006455C4 /* World.cpp */; };
+		5E7ECFAE1E7C24A9006455C4 /* World.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF801E7C232A006455C4 /* World.h */; };
+		5E7ECFAF1E7C24A9006455C4 /* catch.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF961E7C2489006455C4 /* catch.hpp */; };
+		5E7ECFB01E7C24A9006455C4 /* utAllTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7ECF971E7C2489006455C4 /* utAllTests.cpp */; };
+		5ED480F21E7C38C300DD98DA /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480EE1E7C38C300DD98DA /* Image.cpp */; };
+		5ED480F31E7C38C300DD98DA /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ED480F01E7C38C300DD98DA /* Sprite.cpp */; };
+		5ED480F41E7C392300DD98DA /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7ECF2A1E7C221B006455C4 /* SDL2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5E7ECF1D1E7C21E1006455C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5E7ECF8D1E7C245C006455C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E7ECF1F1E7C21E1006455C4 /* xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xcode; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7ECF2A1E7C221B006455C4 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		5E7ECF6D1E7C232A006455C4 /* BasicPhysics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BasicPhysics.cpp; path = ../src/BasicPhysics.cpp; sourceTree = "<group>"; };
+		5E7ECF6E1E7C232A006455C4 /* BasicPhysics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicPhysics.h; path = ../src/BasicPhysics.h; sourceTree = "<group>"; };
+		5E7ECF6F1E7C232A006455C4 /* Canvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Canvas.cpp; path = ../src/Canvas.cpp; sourceTree = "<group>"; };
+		5E7ECF701E7C232A006455C4 /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = ../src/Canvas.h; sourceTree = "<group>"; };
+		5E7ECF711E7C232A006455C4 /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Component.cpp; path = ../src/Component.cpp; sourceTree = "<group>"; };
+		5E7ECF721E7C232A006455C4 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Component.h; path = ../src/Component.h; sourceTree = "<group>"; };
+		5E7ECF731E7C232A006455C4 /* Drawable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Drawable.cpp; path = ../src/Drawable.cpp; sourceTree = "<group>"; };
+		5E7ECF741E7C232A006455C4 /* Drawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Drawable.h; path = ../src/Drawable.h; sourceTree = "<group>"; };
+		5E7ECF751E7C232A006455C4 /* Invisible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Invisible.cpp; path = ../src/Invisible.cpp; sourceTree = "<group>"; };
+		5E7ECF761E7C232A006455C4 /* Invisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Invisible.h; path = ../src/Invisible.h; sourceTree = "<group>"; };
+		5E7ECF771E7C232A006455C4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../src/main.cpp; sourceTree = "<group>"; };
+		5E7ECF781E7C232A006455C4 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = ../src/Object.cpp; sourceTree = "<group>"; };
+		5E7ECF791E7C232A006455C4 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object.h; path = ../src/Object.h; sourceTree = "<group>"; };
+		5E7ECF7A1E7C232A006455C4 /* Physics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Physics.cpp; path = ../src/Physics.cpp; sourceTree = "<group>"; };
+		5E7ECF7B1E7C232A006455C4 /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Physics.h; path = ../src/Physics.h; sourceTree = "<group>"; };
+		5E7ECF7C1E7C232A006455C4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../src/README.txt; sourceTree = "<group>"; };
+		5E7ECF7D1E7C232A006455C4 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector.cpp; path = ../src/Vector.cpp; sourceTree = "<group>"; };
+		5E7ECF7E1E7C232A006455C4 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector.h; path = ../src/Vector.h; sourceTree = "<group>"; };
+		5E7ECF7F1E7C232A006455C4 /* World.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = World.cpp; path = ../src/World.cpp; sourceTree = "<group>"; };
+		5E7ECF801E7C232A006455C4 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = ../src/World.h; sourceTree = "<group>"; };
+		5E7ECF8F1E7C245C006455C4 /* tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7ECF961E7C2489006455C4 /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = catch.hpp; path = ../tests/catch.hpp; sourceTree = "<group>"; };
+		5E7ECF971E7C2489006455C4 /* utAllTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utAllTests.cpp; path = ../tests/utAllTests.cpp; sourceTree = "<group>"; };
+		5E7ECF981E7C2489006455C4 /* utHierarchy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utHierarchy.cpp; path = ../tests/utHierarchy.cpp; sourceTree = "<group>"; };
+		5E7ECF991E7C2489006455C4 /* utVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utVector.cpp; path = ../tests/utVector.cpp; sourceTree = "<group>"; };
+		5ED480EE1E7C38C300DD98DA /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Image.cpp; path = ../src/Image.cpp; sourceTree = "<group>"; };
+		5ED480EF1E7C38C300DD98DA /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../src/Image.h; sourceTree = "<group>"; };
+		5ED480F01E7C38C300DD98DA /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sprite.cpp; path = ../src/Sprite.cpp; sourceTree = "<group>"; };
+		5ED480F11E7C38C300DD98DA /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sprite.h; path = ../src/Sprite.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E7ECF1C1E7C21E1006455C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7ECF2B1E7C221B006455C4 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7ECF8C1E7C245C006455C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED480F41E7C392300DD98DA /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E7ECF161E7C21E1006455C4 = {
+			isa = PBXGroup;
+			children = (
+				5ED480EE1E7C38C300DD98DA /* Image.cpp */,
+				5ED480EF1E7C38C300DD98DA /* Image.h */,
+				5ED480F01E7C38C300DD98DA /* Sprite.cpp */,
+				5ED480F11E7C38C300DD98DA /* Sprite.h */,
+				5E7ECF6D1E7C232A006455C4 /* BasicPhysics.cpp */,
+				5E7ECF6E1E7C232A006455C4 /* BasicPhysics.h */,
+				5E7ECF6F1E7C232A006455C4 /* Canvas.cpp */,
+				5E7ECF701E7C232A006455C4 /* Canvas.h */,
+				5E7ECF711E7C232A006455C4 /* Component.cpp */,
+				5E7ECF721E7C232A006455C4 /* Component.h */,
+				5E7ECF731E7C232A006455C4 /* Drawable.cpp */,
+				5E7ECF741E7C232A006455C4 /* Drawable.h */,
+				5E7ECF751E7C232A006455C4 /* Invisible.cpp */,
+				5E7ECF761E7C232A006455C4 /* Invisible.h */,
+				5E7ECF771E7C232A006455C4 /* main.cpp */,
+				5E7ECF781E7C232A006455C4 /* Object.cpp */,
+				5E7ECF791E7C232A006455C4 /* Object.h */,
+				5E7ECF7A1E7C232A006455C4 /* Physics.cpp */,
+				5E7ECF7B1E7C232A006455C4 /* Physics.h */,
+				5E7ECF7C1E7C232A006455C4 /* README.txt */,
+				5E7ECF7D1E7C232A006455C4 /* Vector.cpp */,
+				5E7ECF7E1E7C232A006455C4 /* Vector.h */,
+				5E7ECF7F1E7C232A006455C4 /* World.cpp */,
+				5E7ECF801E7C232A006455C4 /* World.h */,
+				5E7ECF201E7C21E1006455C4 /* Products */,
+				5E7ECF961E7C2489006455C4 /* catch.hpp */,
+				5E7ECF971E7C2489006455C4 /* utAllTests.cpp */,
+				5E7ECF981E7C2489006455C4 /* utHierarchy.cpp */,
+				5E7ECF991E7C2489006455C4 /* utVector.cpp */,
+				5E7ECF291E7C221B006455C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E7ECF201E7C21E1006455C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E7ECF1F1E7C21E1006455C4 /* xcode */,
+				5E7ECF8F1E7C245C006455C4 /* tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E7ECF291E7C221B006455C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E7ECF2A1E7C221B006455C4 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E7ECF1E1E7C21E1006455C4 /* xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7ECF261E7C21E1006455C4 /* Build configuration list for PBXNativeTarget "xcode" */;
+			buildPhases = (
+				5E7ECF1B1E7C21E1006455C4 /* Sources */,
+				5E7ECF1C1E7C21E1006455C4 /* Frameworks */,
+				5E7ECF1D1E7C21E1006455C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xcode;
+			productName = xcode;
+			productReference = 5E7ECF1F1E7C21E1006455C4 /* xcode */;
+			productType = "com.apple.product-type.tool";
+		};
+		5E7ECF8E1E7C245C006455C4 /* tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7ECF931E7C245C006455C4 /* Build configuration list for PBXNativeTarget "tests" */;
+			buildPhases = (
+				5E7ECF8B1E7C245C006455C4 /* Sources */,
+				5E7ECF8C1E7C245C006455C4 /* Frameworks */,
+				5E7ECF8D1E7C245C006455C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tests;
+			productName = tests;
+			productReference = 5E7ECF8F1E7C245C006455C4 /* tests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E7ECF171E7C21E1006455C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = TwoHundred56;
+				TargetAttributes = {
+					5E7ECF1E1E7C21E1006455C4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					5E7ECF8E1E7C245C006455C4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E7ECF1A1E7C21E1006455C4 /* Build configuration list for PBXProject "xcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E7ECF161E7C21E1006455C4;
+			productRefGroup = 5E7ECF201E7C21E1006455C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E7ECF1E1E7C21E1006455C4 /* xcode */,
+				5E7ECF8E1E7C245C006455C4 /* tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E7ECF1B1E7C21E1006455C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7ECF811E7C232A006455C4 /* BasicPhysics.cpp in Sources */,
+				5E7ECF831E7C232A006455C4 /* Component.cpp in Sources */,
+				5ED480F31E7C38C300DD98DA /* Sprite.cpp in Sources */,
+				5E7ECF861E7C232A006455C4 /* main.cpp in Sources */,
+				5E7ECF821E7C232A006455C4 /* Canvas.cpp in Sources */,
+				5E7ECF871E7C232A006455C4 /* Object.cpp in Sources */,
+				5E7ECF891E7C232A006455C4 /* Vector.cpp in Sources */,
+				5E7ECF8A1E7C232A006455C4 /* World.cpp in Sources */,
+				5E7ECF841E7C232A006455C4 /* Drawable.cpp in Sources */,
+				5ED480F21E7C38C300DD98DA /* Image.cpp in Sources */,
+				5E7ECF851E7C232A006455C4 /* Invisible.cpp in Sources */,
+				5E7ECF881E7C232A006455C4 /* Physics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7ECF8B1E7C245C006455C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7ECF9D1E7C24A9006455C4 /* BasicPhysics.cpp in Sources */,
+				5E7ECF9E1E7C24A9006455C4 /* BasicPhysics.h in Sources */,
+				5E7ECF9F1E7C24A9006455C4 /* Canvas.cpp in Sources */,
+				5E7ECFA01E7C24A9006455C4 /* Canvas.h in Sources */,
+				5E7ECFA11E7C24A9006455C4 /* Component.cpp in Sources */,
+				5E7ECFA21E7C24A9006455C4 /* Component.h in Sources */,
+				5E7ECFA31E7C24A9006455C4 /* Drawable.cpp in Sources */,
+				5E7ECFA41E7C24A9006455C4 /* Drawable.h in Sources */,
+				5E7ECFA51E7C24A9006455C4 /* Invisible.cpp in Sources */,
+				5E7ECFA61E7C24A9006455C4 /* Invisible.h in Sources */,
+				5E7ECFA71E7C24A9006455C4 /* Object.cpp in Sources */,
+				5E7ECFA81E7C24A9006455C4 /* Object.h in Sources */,
+				5E7ECFA91E7C24A9006455C4 /* Physics.cpp in Sources */,
+				5E7ECFAA1E7C24A9006455C4 /* Physics.h in Sources */,
+				5E7ECFAB1E7C24A9006455C4 /* Vector.cpp in Sources */,
+				5E7ECFAC1E7C24A9006455C4 /* Vector.h in Sources */,
+				5E7ECFAD1E7C24A9006455C4 /* World.cpp in Sources */,
+				5E7ECFAE1E7C24A9006455C4 /* World.h in Sources */,
+				5E7ECFAF1E7C24A9006455C4 /* catch.hpp in Sources */,
+				5E7ECFB01E7C24A9006455C4 /* utAllTests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5E7ECF241E7C21E1006455C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5E7ECF251E7C21E1006455C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5E7ECF271E7C21E1006455C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E7ECF281E7C21E1006455C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E7ECF941E7C245C006455C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E7ECF951E7C245C006455C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E7ECF1A1E7C21E1006455C4 /* Build configuration list for PBXProject "xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7ECF241E7C21E1006455C4 /* Debug */,
+				5E7ECF251E7C21E1006455C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7ECF261E7C21E1006455C4 /* Build configuration list for PBXNativeTarget "xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7ECF271E7C21E1006455C4 /* Debug */,
+				5E7ECF281E7C21E1006455C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7ECF931E7C245C006455C4 /* Build configuration list for PBXNativeTarget "tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7ECF941E7C245C006455C4 /* Debug */,
+				5E7ECF951E7C245C006455C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E7ECF171E7C21E1006455C4 /* Project object */;
+}

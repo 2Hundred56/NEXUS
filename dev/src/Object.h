@@ -9,6 +9,7 @@
 #define OBJECT_H_
 namespace comps {class Component; class Physics; class Drawable;}
 namespace worlds {class World;}
+namespace phys {class Vector;}
 namespace objs {
 
 class Object {
@@ -39,7 +40,7 @@ public:
 
 	const comps::Component* getDummy() const;
 	void setDummy(comps::Component* dummy);
-
+	const phys::Vector getPosition() const;
 private:
 	int slot;
 	worlds::World* parent;

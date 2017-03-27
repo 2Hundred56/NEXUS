@@ -20,7 +20,9 @@ Vector::Vector(float x, float y, float z) {
 	this->y=y;
 	this->z=z;
 }
+Vector::Vector() {
 
+}
 Vector::~Vector() {
 	// TODO Auto-generated destructor stub
 }

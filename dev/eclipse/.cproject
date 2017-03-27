@@ -43,6 +43,7 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.1050442393" name="Canvas.h" rcbsApplicability="disable" resourcePath="src/Canvas.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="tests|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
@@ -161,19 +162,10 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.282686511.480698372" name="utHierarchy.cpp" rcbsApplicability="disable" resourcePath="tests/utHierarchy.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.981877601">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.981877601" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638">
-							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.176437907" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.282686511.1257288857" name="utVector.cpp" rcbsApplicability="disable" resourcePath="tests/utVector.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.854239850">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638.854239850" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.macosx.exe.debug.224706638">
-							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.365170474" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-						</tool>
-					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.macosx.exe.debug.529900444.282686511.1063969393" name="Canvas.h" rcbsApplicability="disable" resourcePath="src/Canvas.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="tests|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry excluding="main.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="Sprite.cpp|Image.cpp|Canvas.cpp|main.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry excluding="testPhysics.h|utHierarchy.cpp|utVector.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="tests"/>
 					</sourceEntries>
 				</configuration>
