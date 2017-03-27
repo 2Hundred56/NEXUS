@@ -8,15 +8,21 @@
 #ifndef RESOURCES_H_
 #define RESOURCES_H_
 #include <string>
+#include <vector>
+#include <map>
 namespace cnvs {class Image;}
+struct SDL_Surface;
 namespace res {
 
 class Resources {
 public:
 	Resources();
 	virtual ~Resources();
-	void* get(int key);
-	int load(std::string path);
+	SDL_Surface* getImage(int key);
+	int loadImage(std::string path);
+private:
+	std::map<int, SDL_Surface*>* surfs;
+	int maxid;
 };
 
 } /* namespace res */
